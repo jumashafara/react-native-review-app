@@ -9,4 +9,6 @@ const ReviewDetails = () => {
   );
 };
 
+const styles = StyleSheet.create({});
+
 export default ReviewDetails;

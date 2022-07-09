@@ -9,4 +9,6 @@ const About = () => {
   );
 };
 
+const styles = StyleSheet.create({});
+
 export default About;
