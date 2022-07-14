@@ -1,16 +1,14 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import Home from "./screens/Home";
+import * as Font from "expo-font";
+
+const getFonts = () => {
+  return Font.loadAsync({ menlo: require("./assets/fonts/Monaco.ttf") });
+};
 
 export default function App() {
-  return (
-    <View>
-      <Home />
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <Home />;
 }
 
 const styles = StyleSheet.create({

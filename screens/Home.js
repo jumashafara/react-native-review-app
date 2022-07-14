@@ -1,10 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { globalStyles } from "../styles/globalStyles";
 
 const Home = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text style={globalStyles.titleText}>Home</Text>
     </View>
   );
 };
