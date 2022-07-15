@@ -1,14 +1,20 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import Home from "./screens/Home";
-import * as Font from "expo-font";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import ReviewDetails from "./screens/ReviewDetatils";
 
-const getFonts = () => {
-  return Font.loadAsync({ menlo: require("./assets/fonts/Monaco.ttf") });
-};
-
+const Stack = createNativeStackNavigator();
 export default function App() {
-  return <Home />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Details" component={ReviewDetails} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({
