@@ -9,7 +9,7 @@ const ReviewDetails = ({ route, navigation }) => {
       <Text>ReviewDetails</Text>
       <Button
         title="Go to details again"
-        onPress={() => navigation.navigate("Details")}
+        onPress={() => navigation.navigate("Detail")}
       />
       <Text>Developed by {dev_name}</Text>
     </View>

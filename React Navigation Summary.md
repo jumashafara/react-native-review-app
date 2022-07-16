@@ -14,10 +14,16 @@
 - You can go back to an existing screen in the stack with navigation.`navigate('RouteName')`, and you can go back to the first screen in the stack with `navigation.popToTop()`.
 - The `navigation` prop is available to all screen components (components defined as screens in route configuration and rendered by React Navigation as a route).
 
-## Passing Parameters
+## Passing Parameters to Routes
 
 - `navigate` and `push` accept an optional second argument to let you pass parameters to the route you are navigating to. For example: `navigation.navigate('RouteName', { paramName: 'value' })`.
 - You can read the params through `route.params` inside a screen
 - You can update the screen's params with `navigation.setParams`
 - Initial params can be passed via the `initialParams` prop on Screen
 - Params should contain the minimal data required to show a screen, nothing more
+
+## Summary​
+
+- You can customize the header inside of the `options` prop of your screen components. Read the full list of options in the API reference.
+- The `options` prop can be an object or a function. When it is a function, it is provided with an object with the `navigation` and `route` prop.
+  You can also specify shared `screenOptions` in the stack navigator configuration when you initialize it. The prop takes precedence over that configuration

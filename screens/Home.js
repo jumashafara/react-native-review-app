@@ -10,9 +10,15 @@ const Home = ({ navigation }) => {
       <Button
         title="Go to details"
         onPress={() =>
-          navigation.navigate("Details", { dev_name: "Juma Shafara" })
+          navigation.navigate("Detail", { dev_name: "Juma Shafara" })
         }
       />
+      <View style={{ marginTop: 10 }}>
+        <Button
+          title="Update title"
+          onPress={() => navigation.setOptions({ title: "Shafy-Home" })}
+        />
+      </View>
     </View>
   );
 };
