@@ -22,7 +22,7 @@
 - Initial params can be passed via the `initialParams` prop on Screen
 - Params should contain the minimal data required to show a screen, nothing more
 
-## Summary​
+## Customizing the header bar
 
 - You can customize the header inside of the `options` prop of your screen components. Read the full list of options in the API reference.
 - The `options` prop can be an object or a function. When it is a function, it is provided with an object with the `navigation` and `route` prop.
